@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+    <main>
+        <div class="image_welcome">
+            <div class="welcome_text">
+                <p class="_1">Welcome to SR Salon</p>
+                <p class="_2">Come Relax and Refresh at our Salon</p>
+            </div>
+        </div>
+        <div class="about">
+            <div class="text">
+                <p class="_1">About our salon</p>
+                <p class="_2">SR Unisex Salon and Academy - One of the Best Unisex Salon in Palam. We Offer Services Related to Hair , Manicure, Pedicure, Spa, Facial, Permanent Makeup and many more at reasonable rates. Visit Us Now.</p>
+            </div>
+            <div class="image"> 
+                <img src="/media/aboutusimage.png" alt="owner's_image">
+            </div>
+        </div>
+        <div class='subscribe_form'>
+            <p>Subscribe To Stay Up To Date</p>
+            <p class="_2">Sign up with your email address and receive promotional deals and Salon updates.</p>
+            <form action="/" method="post">
+              {% csrf_token %}
+              <div>
+                <input type="text" class="text size_input" placeholder="Name" name="username" id="username">
+                <input type="Email" class="email size_input" placeholder="Email" name="email" id="email">
+                <input type="password" class="password size_input" placeholder="Password" name="password" id="password">
+
+            </div>
+                <input type="tel" class="password size_input phone_number" placeholder="Phone number" name="phone_number" id="phone_number">
+                <button type="submit" class = "btn">Sign in</button>
+            </form>
+        </div>
+
+        <div class="testimonials">
+            <p class="test_1">Testimonials</p>
+            <div class ="test_2">
+            <div class="card">
+                <p class="_1">a months ago</p>
+                <p class="_2">" You make me totally like a whole new person, never felt so amazing before.The makeup you did was truly incredible, I got a lot of compliments that day, thanks."</p>
+                <p class = "_2">Vasundhra Saini</p>
+            </div>
+            <div class="card">
+                <p class="_1">2 months ago</p>
+                <p class="_2">" good experience . there teachers are very amazing they are teach very politely and gave most knowledge about course.i m highly satisfied. Thank  mam 🙏 🙏"</p>
+                <p class = "_2">Neha Kumari</p>
+            </div>
+            <div class="card">
+                <p class="_1">2 months ago</p>
+                <p class="_2">"Great experience,and it is best salon in Delhi.
+                    Services: Shampoo & conditioning, Tanning, Eyebrow threading, Pedicure, Waxing, Spa services, Massage, Manicure, Facials"</p>
+                <p class = "_2">anku kumari</p>
+            </div>
+        </div>
+        </div>
+    </main>
+{% endblock body %}
+<!-- https://source.unsplash.com/583x524/?salon,people -->

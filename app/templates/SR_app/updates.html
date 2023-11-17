@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% block title %} Updates {% endblock title %}
+{% block body %}
+    <main>
+        <div class="whole_updates">
+            <h1>Updates</h1>
+            <div class=whole_updates_row>
+                <div class="image_text_updates">
+                    <div class="image_updates">
+                        <img src="/media/updates1.png" style="height:400px; width:300px" alt="updates_photos">
+                    </div>
+                    <div class="text_updates">
+                        <p>makeup</p>
+                    </div>
+                </div>
+                <div class="image_text_updates">
+                    <div class="image_updates">
+                        <img src="/media/updates2.png" style="height:400px; width:300px" alt="updates_photos">
+                    </div>
+                    <div class="text_updates">
+                        <p>bridal makeup</p>
+                    </div>
+                </div>
+                <div class="image_text_updates">
+                    <div class="image_updates">
+                        <img src="/media/updates3.png" style="height:400px; width:300px" alt="updates_photos">
+                    </div>
+                    <div class="text_updates">
+                        <p>bridal makeup</p>
+                    </div>
+                </div>
+            </div>
+            <div class=whole_updates_row>
+                <div class="image_text_updates">
+                    <div class="image_updates">
+                        <img src="/media/updates3.png" style="height:400px; width:300px" alt="updates_photos">
+                    </div>
+                    <div class="text_updates">
+                        <p>bridal makeup</p>
+                    </div>
+                </div>
+                <div class="image_text_updates">
+                    <div class="image_updates">
+                        <img src="/media/updates4.png" style="height:400px; width:300px" alt="updates_photos">
+                    </div>
+                    <div class="text_updates">
+                        <p>bridal makeup</p>
+                    </div>
+                </div>
+                <div class="image_text_updates">
+                    <div class="image_updates">
+                        <img src="/media/updates5.png" style="height:400px; width:300px" alt="updates_photos">
+                    </div>
+                    <div class="text_updates">
+                        <p>sangeet makeup</p>
+                    </div>
+                </div>
+            </div>
+            <div class=whole_updates_row>
+                <div class="image_text_updates">
+                    <div class="image_updates">
+                        <img src="/media/updates6.png" style="height:400px; width:300px" alt="updates_photos">
+                    </div>
+                    <div class="text_updates">
+                        <p>hairs</p>
+                    </div>
+                </div>
+                <div class="image_text_updates">
+                    <div class="image_updates">
+                        <img src="/media/updates7.png" style="height:400px; width:300px" alt="updates_photos">
+                    </div>
+                    <div class="text_updates">
+                        <p>Nail Extensions</p>
+                    </div>
+                </div>
+                <div class="image_text_updates">
+                    <div class="image_updates">
+                        <img src="/media/updates8.png" style="height:400px; width:300px" alt="updates_photos">
+                    </div>
+                    <div class="text_updates">
+                        <p>party makeup</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-container">
+            <h2>Comments</h2>
+                {% if user.is_authenticated %}
+                <form action="/postcomment/" method="post">
+                    {% csrf_token %}
+                    <div class="form-comment">
+                        <label for="comment">Post Comment </label>
+                        <input type="text" name="comment" id="comment" placeholder="Enter comment here">
+                    </div>
+                    <input type="hidden" name="parentSno" value="">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                {% else %}
+                Please login to post a comment
+                {% endif %}
+            {% for comment in comments %}
+            <div class="comment_text_username_userimage">
+                <div class="comment_userimage">
+                    <img class="rounded mx-auto d-block w-100 border border-dark p-2" src="/media/user.png" alt="user">
+                </div>
+                <div class="comment_text_username ">
+                    <b> {{comment.user.username}} </b> 
+                    <div>{{comment.comment}}</div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+    </main>
+    {% endblock body %}

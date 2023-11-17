@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+header nav ul li a{
+text-decoration: none;
+}
+header nav ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header nav ul li a
+{
+    
+    /*  header animation is here */
+    position: relative;
+    /* responsive */
+    padding: 0 3.2vw;
+    color:#B28257;
+    font-family:  Georgia, 'Shadows Into Light', cursive;
+    /* responsive */
+    font-size: 2vw;
+    /*header animation is here */
+    animation-name: fontanimate;
+    animation-duration: 1s;
+}
+
+/*header animation is here */
+@keyframes fontanimate 
+{
+    from
+    {
+        top:20px;
+        font-size: 1.5vw;
+    }
+    to
+    {   top:0px;
+        font-size: 2vw;
+    }        
+}
+
+footer .foot .heading{
+    /* responsive */
+    font-size: 2.5vw;
+}
+
+.about .text ._1
+{
+    color:#B28257;
+    /* responsive */
+    font-size: 2.6vw;
+}
+.about .text ._2
+{
+    color:white;
+    /* responsive */
+    font-size: 1.8vw;
+}
+
+.size_input
+{
+    /* responsive */
+    width: 16vw;
+    height: 3vw;
+    font-family: Georgia,'Shadows Into Light', cursive;
+    /* responsive */
+    font-size: 2vw;
+    padding: 0 2vw;
+}

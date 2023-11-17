@@ -1,0 +1,100 @@
+.whole_updates
+{
+    min-height:100vh;
+    min-width:100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.whole_updates h1
+{
+    color:var(--main-bg-color);
+    font-size:4vw;
+    text-decoration: underline;
+    font-family: Georgia,'Shadows Into Light', cursive;
+    margin:2vw;
+}
+.whole_updates .whole_updates_row
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.whole_updates .whole_updates_row .image_text_updates .image_updates img
+{
+    width:20vw;
+    height:20vh;
+}
+.whole_updates .whole_updates_row .image_text_updates
+{
+    /* animation */
+    position: relative;
+    height: 25vw;
+    width: 20vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:3vw; 
+    font-family: Georgia,'Shadows Into Light', cursive;
+    color: white;
+    font-size: 1.25vw;
+    /* animation */
+    animation-name: font_animate_all;
+    animation-duration: 1s;
+}
+.comment-container
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia,'Shadows Into Light', cursive;
+    font-size:3vw;
+}
+
+.comment-container form
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.comment-container form input
+{
+    height: 4vw;
+    width: 23vw;
+    padding: 0 2vw;   
+    font-size:1.5vw;
+    font-family: Georgia,'Shadows Into Light', cursive;
+    border: 2px solid black;
+}
+.comment-container form button
+{
+    height: 2.5vw;
+    width: 7.5vw; 
+    font-size:1.5vw; 
+    margin:1.5vw; 
+    font-family: Georgia,'Shadows Into Light', cursive;
+    background-color:var(--main-bg-color);
+}
+
+.comment_text_username_userimage
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    font-family: Georgia,'Shadows Into Light', cursive;
+}
+
+.comment_text_username_userimage .comment_userimage img
+{
+    height:2vw;
+    width:2vw;
+    margin:2vw;
+}

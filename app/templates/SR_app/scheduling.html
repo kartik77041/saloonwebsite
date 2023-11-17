@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %} Scheduling {% endblock title %}
+{% block body %}
+    <main>
+        <div class="scheduling_form">
+            <div class="all">
+            <p class="_1">Request An Appointment</p>
+            <p class="_2">Appointment 
+                Fill out the form below and a member from our team will contact you for scheduling and Pricing.</p>
+            <form action="/scheduling/" method="POST">
+                {% csrf_token %}
+                <div>
+                <input required type="text" placeholder="First Name" id="fname" name="fname">
+                <input type="text" placeholder ="Last Name" name="lname">
+                </div>
+                <div>
+                <label for="date">Date Of Appointment</label>
+                <input type="date" id="date" name="date" value="yyyy-month-date" name="date">
+                </div>
+                <div>
+                <input type="tel" id ="phone_number" required name="phone_number" placeholder="Phone number"><br><br>
+                </div>
+                <button type ='submit'>Submit</button>
+            </form>
+        </div>
+        </div>
+    </main>
+{% endblock body%}

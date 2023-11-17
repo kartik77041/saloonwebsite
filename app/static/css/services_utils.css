@@ -1,0 +1,50 @@
+.service_text_cards
+{ 
+    width:100vw;
+    height: 60vh;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 3vw 0px;
+}
+
+.service_text_cards .services_text
+{
+    /* animation */
+    position: relative;
+    height: 22.5vw;
+    width: 25vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Shadows Into Light', cursive;
+    color:white;
+    margin:3vw;
+    /* animation */
+    animation-name: font_animate_all;
+    animation-duration: 1s;
+}
+
+/* animation for all except welcome and header */
+@keyframes font_animate_all
+{
+    from
+    {   
+        top:60px;  
+    }
+    to
+    {   
+        top:0px;
+    }        
+}
+.service_text_cards .services_text .service_text_heading
+{
+    font-size: 2vw;
+}
+
+.service_text_cards .services_text div
+{
+    font-size: 1vw;
+}

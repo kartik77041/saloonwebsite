@@ -1,0 +1,86 @@
+.scheduling_form
+{
+    /* animation */
+    position: relative;
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    /* animation */
+    animation-name: font_animate_all;
+    animation-duration: 1s;
+}
+/* animation for all except welcome and header */
+@keyframes font_animate_all
+{
+    from
+    {   
+        top:60px;  
+    }
+    to
+    {   
+        top:0px;
+    }        
+}
+.all
+{
+    height:100vh;
+    width:70vw;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    border:2px solid black;
+    border-radius:6px;
+    font-family:Georgia,'Shadows Into Light', cursive;
+    color:var(--main-bg-color);
+}
+.scheduling_form .all ._1
+{
+    font-size:6vw;
+    margin:1vw;
+}
+.scheduling_form  .all ._2
+{
+    font-size:2vw;
+    margin:1vw;
+}
+.scheduling_form .all form
+{
+    color:white;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin:2vw;
+}
+.scheduling_form .all form input
+{
+    height: 3vw;
+    width: 18vw;
+    margin:2vw;
+    font-size:1.5vw;
+    font-family: Georgia,'Shadows Into Light', cursive;
+    padding:0 1vw;
+}
+
+.scheduling_form .all form button
+{
+    height: 2.5vw;
+    width: 5vw;
+    margin: 1vw;
+    font-family: Georgia,'Shadows Into Light', cursive;
+    border:2px solid black;
+    font-size:1.5vw;
+    background-color: var(--main-bg-color);
+}
+
+.scheduling_form .all form label
+{
+    font-size: 1.5vw;
+    font-family: Georgia,'Shadows Into Light', cursive;
+}

@@ -1,0 +1,303 @@
+@media screen and (max-width: 500px) {
+    header nav ul li a {
+        font-size: 3vw;
+        /* animation is here */
+        animation-name: fontanimateres;
+        animation-duration: 1s;
+    }
+
+    /* SR_logo_image */
+    header nav .SR_logo_image {
+        position: relative;
+        top: 0vw;
+        right: -4vw;
+        width: 4vw;
+        padding: 0px;
+    }
+
+    .facebook_insta {
+        position: absolute;
+        /* for responsive changed */
+        padding: .4px;
+        z-index: 7;
+        left: 70vw;
+        top: 20vw;
+    }
+
+    .facebook_insta img {
+        width: 15px;
+        height: 15px;
+        padding: 4px;
+    }
+
+    header nav {
+        height: 20vw;
+    }
+
+    .welcome_text ._1 {
+        font-size: 10vw;
+        animation-name: fontanimatewelcometext1responsive;
+        animation-duration: 1s;
+    }
+
+    @keyframes fontanimatewelcometext1responsive {
+        from {
+            top: 20px;
+            font-size: 8vw;
+        }
+
+        to {
+            top: 0px;
+            font-size: 10vw;
+        }
+    }
+
+    .welcome_text ._2 {
+        font-size: 5vw;
+        animation-name: fontanimatewelcometext2responsive;
+        animation-duration: 1s;
+    }
+
+    @keyframes fontanimatewelcometext2responsive {
+        from {
+            top: 20px;
+            font-size: 4vw;
+        }
+
+        to {
+            top: 0px;
+            font-size: 5vw;
+        }
+    }
+
+    .about .text {
+        height: 50vw;
+        width: 40vw;
+        /* add text down some */
+        padding: 0px;
+    }
+
+    .about .image img {
+        padding: 10px 0px 0px 0px;
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .about .text ._1 {
+        padding: 0px;
+        font-size: 5vw;
+    }
+
+    .about .text ._2 {
+
+        font-size: 2.5vw;
+    }
+
+    .size_input {
+        width: 23vw;
+        height: 7vw;
+        font-size: 3vw;
+    }
+
+    .subscribe_form form .btn {
+        width: 15vw;
+        height: 8vw;
+        margin: 6vw;
+        font-size: 3vw;
+    }
+
+    .subscribe_form {
+        font-size: 7vw;
+    }
+
+    .subscribe_form ._2 {
+        font-size: 3vw;
+    }
+
+    .testimonials .test_1 {
+        font-size: 5vw;
+    }
+
+    .testimonials .test_2 {
+        /* animation */
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .testimonials .test_2 .card {
+        width: 60vw;
+        height: 50vw;
+        margin: 10vw;
+    }
+
+    .testimonials .test_2 .card ._1 {
+        font-size: 4.8vw;
+    }
+
+    .testimonials .test_2 .card ._2 {
+        font-size: 3.8vw;
+    }
+
+    footer .foot {
+        font-size: 5vw;
+        padding: 50vw 0vw 25vw;
+        margin: 25vw;
+    }
+
+    /* logo image */
+    footer div a img {
+        size: 4vw;
+        position: relative;
+        top: 20vw;
+        right: 50vw;
+        height: 10vw;
+    }
+}
+
+@keyframes fontanimateres {
+    from {
+        top: 20px;
+        font-size: 3.5vw;
+    }
+
+    to {
+        top: 0px;
+        font-size: 3vw;
+    }
+}
+
+/* services */
+@media screen and (max-width: 800px) {
+    .service_text_cards .services_text img {
+        /* animation */
+        position: relative;
+        height: 30vw;
+        width: 40vw;
+    }
+
+    .service_text_cards .services_text .service_text_heading {
+        font-size: 4vw;
+    }
+
+    .service_text_cards .services_text div {
+        font-size: 2vw;
+    }
+
+    .comment-container {
+        font-size: 6vw;
+    }
+
+    .comment-container form input {
+        height: 8vw;
+        width: 45vw;
+        padding: 0 2vw;
+        font-size: 5vw;
+    }
+
+    .comment-container form button {
+        height: 6vw;
+        width: 16vw;
+        font-size: 4vw;
+        margin: 3vw;
+    }
+
+    .comment_text_username_userimage {
+        font-size: 4vw;
+
+    }
+
+    .comment_text_username_userimage .comment_userimage img {
+        height: 4vw;
+        width: 4vw;
+        margin: 4vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .service_text_cards {
+        padding: 20vw 0 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2vw;
+    }
+
+    .service_text_cards .services_text {
+
+        height: 80vw;
+        width: 80vw;
+        margin: 2vw;
+        font-size: 2.5vw;
+    }
+
+    .service_text_cards .services_text img {
+        width: 50vw;
+        height: 40vw;
+    }
+}
+
+/* for scheduling */
+@media screen and (max-width:900px) {
+    .all {
+        height: 50vh;
+        width: 95vw;
+    }
+    .scheduling_form
+    {
+        height:55vh;
+    }
+    .scheduling_form .all form input {
+        height: 8vw;
+        width: 30vw;
+        margin: 3vw;
+        font-size: 4vw;
+        padding: 1px;
+    }
+
+    .scheduling_form .all form button {
+        height: 7vw;
+        width: 16vw;
+        margin: 0vw;
+        font-size: 4vw;
+    }
+
+    .scheduling_form .all form label {
+        font-size: 5vw;
+    }
+
+    .scheduling_form .all ._1 {
+        font-size: 8vw;
+        margin: 2vw;
+    }
+
+    .scheduling_form .all ._2 {
+        font-size: 3vw;
+        margin: 2vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .whole_updates .whole_updates_row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .whole_updates .whole_updates_row .image_text_updates {
+
+        height: 80vw;
+        width: 80vw;
+        margin: 18vw;
+        font-size: 4vw;
+    }
+
+    .whole_updates .whole_updates_row .image_text_updates .image_updates img {
+        width: 40vw;
+        height: 40vh;
+    }
+}

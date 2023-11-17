@@ -1,0 +1,299 @@
+:root {
+    --main-bg-color: #B28257;
+}
+::-webkit-scrollbar {
+    display: none;
+  }venv 
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #483128;  
+}
+.whatsappimage
+{
+    position: fixed;
+    bottom:2vw;
+    right: 2vw;
+    width: 5vw;
+    padding: 0px;
+}
+header nav
+{   
+    background-color: #483128;
+    /* for responsive changed */
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    /* position : fixed; */
+    z-index: 1;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: violet; */
+}
+/* SR_logo_image */
+header nav .SR_logo_image
+{   position: relative;
+    top:0px;
+    right:8vw;
+    width:4vw;
+    padding:0px;
+}
+.facebook_insta
+{   position: relative;
+    /* for responsive changed */
+    padding:.4px;
+    left: 7vw;
+}
+.facebook_insta a
+{
+    /* for responsive changed */
+    padding:0 .4vw;
+}
+
+
+main{
+    min-height: calc(100vh - 15vw - 237px);   
+}
+
+.image_welcome{
+    /* for not fixed header */
+    height:calc(100vh - 15vh);
+    width:100vw;
+    background : url('/media/salon_welcome.png') no-repeat;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+
+}
+
+.welcome_text
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Georgia,'Shadows Into Light', cursive;
+}
+.welcome_text ._1
+{
+    /* welcome text 1 animation */
+    position: relative;
+    /* for responsive */
+    font-size: 6vw;
+    /* welcome text 1 animation */
+    animation-name: fontanimatewelcometext1;
+    animation-duration: 1s;
+}
+/* welcome text 1 animation */
+@keyframes fontanimatewelcometext1 
+{
+    from
+    {   top:20px;
+        font-size: 5.5vw;
+    }
+    to
+    {   top:0px;
+        font-size: 6vw;
+    }        
+}
+
+.welcome_text ._2
+{
+    /* welcome text 2 animation */
+    position: relative;
+    /* for responsive */
+    font-size: 2.5vw;
+    /* welcome text 2 animation */
+    animation-name: fontanimatewelcometext2;
+    animation-duration: 1s;
+}
+/* welcome text 2 animation */
+@keyframes fontanimatewelcometext2 
+{
+    from
+    {   top:20px;
+        font-size: 2vw;
+    }
+    to
+    {   top:0px;
+        font-size: 2.5vw;
+    }        
+}
+.about
+{   
+    /* animation */
+    position: relative;
+    /* for responsive */
+    padding: 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia,'Shadows Into Light', cursive;
+    /* animation */
+    animation-name: font_animate_all;
+    animation-duration: 1s;
+}
+/* animation for all except welcome and header */
+@keyframes font_animate_all
+{
+    from
+    {   
+        top:60px;  
+    }
+    to
+    {   
+        top:0px;
+    }        
+}
+.about .text
+{
+    /* for responsive */
+    height: 30vw;
+    width: 28vw;
+}
+.about .image img
+{
+    /* for responsive */
+    height: 30vw;
+    width: 28vw;
+}
+.subscribe_form
+{
+    /* animation */
+    position: relative;
+    font-family: Georgia,'Shadows Into Light', cursive;
+    /* for responsive */
+    font-size: 3vw;
+    color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* for responsive */
+    margin: 4vw;
+    /* animation */
+    animation-name: font_animate_all;
+    animation-duration: 1s;
+
+}
+.subscribe_form ._2
+{
+    color: white;
+    /* for responsive */
+    font-size: 1.5vw;
+    padding: 0px 0px 1.5vw 0px;
+}
+.subscribe_form form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.subscribe_form form .btn
+{
+    font-family: Georgia,'Shadows Into Light', cursive;
+    background-color: var(--main-bg-color);
+    /* for responsive */
+    width: 6vw;
+    height: 3vw;
+    margin: 2vw;
+    font-size: 1.5vw;
+    border: 2px solid black;
+}
+
+.testimonials 
+{
+    /* animation */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* animation */
+    animation-name: font_animate_all;
+    animation-duration: 1s;
+}
+.testimonials .test_1
+{
+    color: var(--main-bg-color);
+    /* for responsive */
+    font-size:3vw;
+    font-family: Georgia,'Shadows Into Light', cursive;
+    text-decoration: underline;
+
+}
+.testimonials .test_2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.testimonials .test_2 .card
+{   
+    /* for responsive */
+    width: 17vw;
+    height:17vw;
+    margin: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Georgia,'Shadows Into Light', cursive;
+    border: 2px solid black;
+    border-radius: 6px;
+    color: white;
+    /* for responsive */
+    padding: 2vw;
+}
+.testimonials .test_2 .card ._1
+{
+    /* for responsive */
+    font-size: 1.6vw;
+    color: var(--main-bg-color)
+}
+.testimonials .test_2 .card ._2
+{
+    /* for responsive */
+    font-size: 1.2vw;
+}
+footer .foot
+{
+    /* animation */
+    position: relative;
+    color: white;
+    font-family: Georgia,'Shadows Into Light', cursive;
+    /* for responsive */
+    font-size: 1.5vw;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    /* for responsive */
+    height: 12vw;
+    margin: 7.5vw;
+    /* animation */
+    animation-name: font_animate_all;
+    animation-duration: 1s;
+}
+
+.hours{
+    /* for responsive */
+    padding: 0 17.4vw 0 0px;
+}
+/* SR_logo_image */
+footer div a img
+{
+    position: relative;
+    top: 325px;
+    right: -5vw;
+    height: 8vw;
+}
