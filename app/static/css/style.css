@@ -15,9 +15,12 @@ body{
 {
     position: fixed;
     bottom:2vw;
-    right: 2vw;
+    right: 0vw;
     width: 5vw;
     padding: 0px;
+}
+header{
+    width:100%;
 }
 header nav
 {   
@@ -36,23 +39,15 @@ header nav
 /* SR_logo_image */
 header nav .SR_logo_image
 {   position: relative;
-    top:0px;
-    right:8vw;
+    top:0vw;
+    left:0vw;
     width:4vw;
     padding:0px;
 }
 .facebook_insta
 {   position: relative;
-    /* for responsive changed */
-    padding:.4px;
-    left: 7vw;
+    right:0vw;
 }
-.facebook_insta a
-{
-    /* for responsive changed */
-    padding:0 .4vw;
-}
-
 
 main{
     min-height: calc(100vh - 15vw - 237px);   
@@ -202,7 +197,7 @@ main{
     font-family: Georgia,'Shadows Into Light', cursive;
     background-color: var(--main-bg-color);
     /* for responsive */
-    width: 6vw;
+    width: 8vw;
     height: 3vw;
     margin: 2vw;
     font-size: 1.5vw;
@@ -290,10 +285,15 @@ footer .foot
     padding: 0 17.4vw 0 0px;
 }
 /* SR_logo_image */
-footer div a img
+footer{
+    margin:0;
+    padding:0;
+    height:50vh;
+}
+footer img
 {
     position: relative;
-    top: 325px;
-    right: -5vw;
-    height: 8vw;
+    top: 30vh;
+    left: 1vw;
+    height: 8vh;
 }

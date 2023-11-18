@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% load static %}
     <style>
         .rounded-button1 {
@@ -17,23 +17,26 @@
             width: 60px;
             height: 30px;
         }
-        .rounded-button{
+
+        .rounded-button {
             background-color: #665d4e;
             color: white;
             border: none;
             cursor: pointer;
-            border-radius: 5px;
-            padding: 5px 10px;
-            width: 60px;
-            height: 20px;
+            border-radius: 1vw;
+            padding: 0.1vw;
+            width: 5vw;
+            height: 2.5vw;
+            margin:0.5vw;
+            font-size: 1vw;
         }
+
         .rounded-input {
             border-radius: 5px;
             padding: 5px;
             width: 60px;
             height: 20px;
         }
-
     </style>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/utils.css' %}">
@@ -48,24 +51,22 @@
 
 <body>
     <div class="whatsapp">
-        <a href="https://wa.me/918882376540" target="_blank"><img class="whatsappimage" src="/media/whatsapp.png"
+        <a href="https://wa.me/917838150616" target="_blank"><img class="whatsappimage" src="/media/whatsapp.png"
                 alt="whatsappimage"></a>
     </div>
     <header>
         <nav>
             <a href="/"><img class="SR_logo_image" src="/media/SR_salon_logo.png" alt="SR_salon_logo"></a>
             <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
+                <li><a href="/">Home</a> </li>
                 <li><a href="/services">Services</a></li>
                 <li><a href="/scheduling">Scheduling</a></li>
                 <li><a href="/updates">Updates</a></li>
                 <li><a href="/academy">Academy</a></li>
             </ul>
             <div class="facebook_insta">
-                <a href="facebook.com"><img src="/media/f.png" alt="facebook" weight="30px" height="30px"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="/media/instagram.png" alt="instagrm"
+                <a href="https://www.facebook.com/p/SR-Unisex-Salon-Academy-100086627582401/"><img src="/media/f.png" alt="facebook" weight="30px" height="30px"></a>
+                <a href="https://www.instagram.com/srunisexsalon.andacademy/" target="_blank"><img src="/media/instagram.png" alt="instagrm"
                         weight="30px" height="30px"></a>
             </div>
         </nav>
@@ -73,35 +74,30 @@
     <main>
         {% if request.user.username != "" %}
         <div class="user-actions">
-          <form action="/websocket/kartik" method="post">
-            {% csrf_token %}
-            <button type="submit" class="rounded-button">{{ request.user.username }}</button>
-          </form>
-          <form action="/handlelogout" method="post">
-            {% csrf_token %}
-            <button type="submit" class="rounded-button">Logout</button>
-          </form>
+            <form action="/handlelogout" method="post">
+                {% csrf_token %}
+                <button type="submit" class="rounded-button">Logout</button>
+            </form>
         </div>
         {% else %}
         <div class="login-form">
-          <form action="/handlelogin" method="post">
-            {% csrf_token %}
-            <input type="username" name="usernamelogin" id="usernamelogin" class="usernamelogin rounded-input" placeholder="Username">
-            <input type="password" name="passwordlogin" id="passwordlogin" class="passwordlogin rounded-input" placeholder="Password">
-            <button type="submit" class="rounded-button1">Login</button>
-          </form>
+            <form action="/handlelogin" method="post">
+                {% csrf_token %}
+                <input type="username" name="usernamelogin" id="usernamelogin" class="usernamelogin rounded-input"
+                    placeholder="Username">
+                <input type="password" name="passwordlogin" id="passwordlogin" class="passwordlogin rounded-input"
+                    placeholder="Password">
+                <button type="submit" class="rounded-button1">Login</button>
+            </form>
         </div>
-        {% endif %}        
+        {% endif %}
         {% block body %} {% endblock body %}
     </main>
     <footer>
-        <div>
-            <a href="/"><img class="SR_logo_image" src="/media/SR_salon_logo.png" alt="SR_logo_image"></a>
-        </div>
-        <div class="foot">
-            <div class="hours ">
-                <p >Hours:</p>
-                <ol >
+        <img class="SR_logo_image" src="/media/SR_salon_logo.png" alt="SR_logo_image">
+        <span class="foot">
+            <span class="hours ">
+                <ol>
                     <li>Monday 10:00–21:00</li>
                     <li>Tuesday Closed</li>
                     <li>Wednesday 10:00–21:00</li>
@@ -110,13 +106,13 @@
                     <li>Saturday 10:00–21:30</li>
                     <li>Sunday 10:00–21:00</li>
                 </ol>
-            </div>
-            <div class="address">
-                <p >Address:</p>
+            </span>
+            <span class="address">
+                <p>Address:</p>
                 <p>Near palam gol chakkar</p>
                 <p><b> phone : 7838150616 &amp; 9718896253 </b> </p>
-            </div>
-        </div>
+            </span>
+        </span>
     </footer>
 </body>
 

@@ -24,8 +24,8 @@
 }
 .whole_updates .whole_updates_row .image_text_updates .image_updates img
 {
-    width:20vw;
-    height:20vh;
+    width:15vw;
+    height:20vw;
 }
 .whole_updates .whole_updates_row .image_text_updates
 {
@@ -44,6 +44,7 @@
     /* animation */
     animation-name: font_animate_all;
     animation-duration: 1s;
+    margin: 8vw;
 }
 .comment-container
 {

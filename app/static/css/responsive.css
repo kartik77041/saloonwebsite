@@ -1,16 +1,49 @@
-@media screen and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 250px) {
+    .service_text_cards {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .service_text_cards .services_text {
+
+        height: 80vw;
+        width: 80vw;
+        margin: 0vw;
+        font-size: 2.5vw;
+    }
+
+    .service_text_cards .services_text .service_text_heading {
+        font-size: 4vw;
+    }
+
+    .service_text_cards .services_text img {
+        width: 40vw;
+        height: 30vw;
+    }
+}
+
+@media (min-width:0px) and (max-width: 500px) {
+    header nav {
+        width: 100vw;
+    }
+
     header nav ul li a {
         font-size: 3vw;
         /* animation is here */
         animation-name: fontanimateres;
         animation-duration: 1s;
+        padding: 1.5vw;
     }
 
     /* SR_logo_image */
     header nav .SR_logo_image {
         position: relative;
         top: 0vw;
-        right: -4vw;
+        left: 0vw;
         width: 4vw;
         padding: 0px;
     }
@@ -18,9 +51,8 @@
     .facebook_insta {
         position: absolute;
         /* for responsive changed */
-        padding: .4px;
         z-index: 7;
-        left: 70vw;
+        right: 0;
         top: 20vw;
     }
 
@@ -28,6 +60,14 @@
         width: 15px;
         height: 15px;
         padding: 4px;
+    }
+
+    .rounded-button {
+        margin: 0vw;
+        padding: 1vw;
+        height: 5vw;
+        width: 12vw;
+        font-size: 3vw;
     }
 
     header nav {
@@ -94,8 +134,8 @@
     }
 
     .size_input {
-        width: 23vw;
-        height: 7vw;
+        width: 16vw;
+        height: 6vw;
         font-size: 3vw;
     }
 
@@ -107,7 +147,7 @@
     }
 
     .subscribe_form {
-        font-size: 7vw;
+        font-size: 6vw;
     }
 
     .subscribe_form ._2 {
@@ -143,17 +183,17 @@
 
     footer .foot {
         font-size: 5vw;
-        padding: 50vw 0vw 25vw;
-        margin: 25vw;
+        padding: 50vh 0vh 25vh;
     }
 
     /* logo image */
-    footer div a img {
+    footer img {
         size: 4vw;
         position: relative;
-        top: 20vw;
-        right: 50vw;
+        right: 0vw;
+        left: 62vw;
         height: 10vw;
+        top: 40vh;
     }
 }
 
@@ -170,22 +210,20 @@
 }
 
 /* services */
-@media screen and (max-width: 800px) {
+@media (min-width: 500px) and (max-width: 800px) {
     .service_text_cards .services_text img {
         /* animation */
         position: relative;
-        height: 30vw;
-        width: 40vw;
+        height: 25vw;
+        width: 28vw;
     }
 
     .service_text_cards .services_text .service_text_heading {
-        font-size: 4vw;
-    }
-
-    .service_text_cards .services_text div {
         font-size: 2vw;
     }
+}
 
+@media screen and (max-width: 800px) {
     .comment-container {
         font-size: 6vw;
     }
@@ -216,9 +254,9 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media (min-width: 250px) and (max-width: 500px) {
     .service_text_cards {
-        padding: 20vw 0 15px 0;
+        padding: 60vw 0 10vw 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -230,26 +268,72 @@
 
         height: 80vw;
         width: 80vw;
-        margin: 2vw;
-        font-size: 2.5vw;
+        margin: 8vw;
     }
 
     .service_text_cards .services_text img {
+        padding: 0vw;
         width: 50vw;
         height: 40vw;
+    }
+
+    .service_text_cards .services_text .service_text_heading {
+        font-size: 4vw;
+        margin: 0px;
     }
 }
 
 /* for scheduling */
-@media screen and (max-width:900px) {
+@media (min-width: 400px) and (max-width: 900px) {
+    .all {
+        height: 50vw;
+        width: 95vw;
+    }
+
+    .scheduling_form {
+        height: 55vh;
+    }
+
+    .scheduling_form .all form input {
+        height: 4vw;
+        width: 25vw;
+        margin: 1vw;
+        font-size: 3vw;
+        padding: 0px;
+    }
+
+    .scheduling_form .all form button {
+        height: 4vw;
+        width: 20vw;
+        margin: 0vw;
+        font-size: 3vw;
+    }
+
+    .scheduling_form .all form label {
+        font-size: 3vw;
+    }
+
+    .scheduling_form .all ._1 {
+        font-size: 4vw;
+        margin: 0vw;
+    }
+
+    .scheduling_form .all ._2 {
+        font-size: 2vw;
+        margin: 1vw;
+    }
+}
+
+@media screen and (max-width:400px) {
     .all {
         height: 50vh;
         width: 95vw;
     }
-    .scheduling_form
-    {
-        height:55vh;
+
+    .scheduling_form {
+        height: 55vh;
     }
+
     .scheduling_form .all form input {
         height: 8vw;
         width: 30vw;
@@ -298,6 +382,33 @@
 
     .whole_updates .whole_updates_row .image_text_updates .image_updates img {
         width: 40vw;
-        height: 40vh;
+        height: 40vw;
+    }
+}
+@media (min-width:200px) and (max-width:400px) {
+    .whole_updates .whole_updates_row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .whole_updates .whole_updates_row .image_text_updates {
+
+        height: 80vw;
+        width: 80vw;
+        margin: 30vw;
+        font-size: 4vw;
+    }
+
+    .whole_updates .whole_updates_row .image_text_updates .image_updates img {
+        width: 70vw;
+        height: 70vw;
+    }
+}
+@media (min-width:0px) and (max-width:200px) {
+    .whole_updates .whole_updates_row .image_text_updates .image_updates img {
+        width: 40vw;
+        height: 40vw;
     }
 }
